@@ -21,7 +21,7 @@ public class PowerUp : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Rotate(transform.rotation.x, transform.rotation.y + 1f, transform.rotation.z);
+        transform.Rotate(transform.rotation.x, transform.rotation.y + 5f, transform.rotation.z);
         if (Time.time - pickedUpTime >= respawnTime)
         {
             mr.enabled = true;
